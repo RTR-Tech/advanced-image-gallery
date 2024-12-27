@@ -11,6 +11,7 @@ class AIG_Assets
     public static function enqueue_admin_assets($hook)
     {
         if ('post.php' === $hook || 'post-new.php' === $hook) {
+            wp_enqueue_script('jquery-ui-sortable');
             wp_enqueue_style('aig-admin-css', plugin_dir_url(__FILE__) . '../assets/css/admin.css');
             wp_enqueue_script('aig-admin-js', plugin_dir_url(__FILE__) . '../assets/js/admin.js', array('jquery'), '1.0.0', true);
             wp_localize_script('aig-admin-js', 'AIG_Admin', array(

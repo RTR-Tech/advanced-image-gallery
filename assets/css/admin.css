@@ -1,6 +1,6 @@
 #aig-gallery-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
@@ -37,6 +37,14 @@
   margin-right: 10px;
   margin-top: 30px;
 }
+
 #aig-clear-all-images {
   margin-top: 30px;
+}
+
+.aig-placeholder {
+  border: 2px dashed #ddd;
+  background-color: #f9f9f9;
+  height: 150px;
+  margin-bottom: 10px;
 }
