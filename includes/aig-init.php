@@ -17,14 +17,11 @@ class AIG_Init
         // Load Post Type
         AIG_Post_Type::register();
 
-        // Load Taxonomy
-        AIG_Taxonomy::register();
-
         // Load Meta Boxes
         AIG_Meta_Box::register();
 
         // Load Shortcodes
-        AIG_Shortcode::register();
+        AIG_Shortcodes::register();
 
         // Load Assets
         AIG_Assets::register();

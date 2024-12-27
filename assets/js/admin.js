@@ -38,5 +38,11 @@
       e.preventDefault();
       $(this).closest(".aig-gallery-item").remove();
     });
+
+    // Clear All functionality
+    $("#aig-clear-all-images").on("click", function (e) {
+      e.preventDefault();
+      $("#aig-gallery-container").empty();
+    });
   });
 })(jQuery);
